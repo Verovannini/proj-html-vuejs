@@ -1,0 +1,60 @@
+header{
+    background-image: url(../img/header-image-homepage.jpg);
+    height: 570px;
+    background-size: 110%;
+    background-position-x: center;
+    position: relative;
+
+    nav{
+        font-family: $font_style_nav_btn;
+        padding-top: 20px;
+        @include display_flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo img{
+            max-width: 180px;
+        }
+
+        .menu{
+            @include display_flex;
+            align-items: center;
+
+            li{
+                margin-left: 25px;
+            }
+
+            a{
+                color: $brand_secondary_color;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .teaser{
+        color: $brand_secondary_color;
+        width: 40%;
+        position: absolute;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+
+        h1{
+           font-size: $font_size_title; 
+           padding-bottom: 20px;
+
+           span{
+                color: $brand_primary_color;
+            }
+        }
+
+        p{
+            font-size: $font_size_lg;
+            padding-bottom: 20px;
+        }
+
+        .blue-btn{
+            padding: 10px 30px;
+        }
+    }
+}

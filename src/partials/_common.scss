@@ -1,0 +1,43 @@
+// RESET
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font_style_common;
+}
+
+// Containers
+.container-lg{
+    width: 92%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+// Menus
+.menu{
+    list-style-type: none;
+
+    a{
+        text-decoration: none;
+        font-size: $font_size_sm;
+
+        &.active{
+            color: $brand_primary_color;
+        }
+    }
+}
+
+// Buttons
+.blue-btn{
+    @include btn-standard;
+    background-color: $brand_primary_color;
+    color: $brand_secondary_color;
+    border: 0;
+}

@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avada Health</title>
 
+    <!-- Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Font Noto Sans JP -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
     <!-- Link FontAwesome and CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="dist/app.css">
@@ -15,7 +23,42 @@
 </head>
 <body>
     <div id="root">
-        {{test}}
+        <!-- START HEADER -->
+        <header>
+            <!-- Start Navbar -->
+            <div class="container-lg">
+                <nav>
+                    <!-- Start Logo -->
+                    <div class="logo">
+                        <img src="img/medical_logo_1x_light.png" alt="">
+                    </div>
+                    <!-- End Logo -->
+
+                    <!-- Start Menu -->
+                    <ul class="menu">
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Departments</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a class="blue-btn" href="#">Make appointment</a></li>
+                    </ul>
+                    <!-- End Menu -->
+                </nav>
+            </div>
+            <!-- End Navbar -->
+
+            <!-- Start Teaser -->
+            <div class="container">
+                <div class="teaser">
+                    <h1>Caring <span>For Life</span></h1>
+                    <p>Kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family.</p>
+                    <button class="blue-btn">Learn More</button>
+                </div>
+            </div>
+            <!-- End Teaser -->
+
+        </header>
+        <!-- END HEADER -->
     </div>
 
     <script src="dist/app.js"></script>

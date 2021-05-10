@@ -1,1 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container-lg {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.menu {
+  list-style-type: none;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 10px;
+}
+.menu a.active {
+  color: #39afbb;
+}
+
+.blue-btn {
+  padding: 7px 25px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  background-color: #39afbb;
+  color: #fff;
+  border: 0;
+}
+
+header {
+  background-image: url(../img/header-image-homepage.jpg);
+  height: 570px;
+  background-size: 110%;
+  background-position-x: center;
+  position: relative;
+}
+header nav {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo img {
+  max-width: 180px;
+}
+header nav .menu {
+  display: flex;
+  align-items: center;
+}
+header nav .menu li {
+  margin-left: 25px;
+}
+header nav .menu a {
+  color: #fff;
+  text-transform: uppercase;
+}
+header .teaser {
+  color: #fff;
+  width: 40%;
+  position: absolute;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .teaser h1 {
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+header .teaser h1 span {
+  color: #39afbb;
+}
+header .teaser p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+header .teaser .blue-btn {
+  padding: 10px 30px;
+}

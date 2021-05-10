@@ -1,0 +1,13 @@
+@mixin display_flex {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin btn-standard {
+    padding: 7px 25px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: $font_style_nav_btn;
+    font-size: $font_size_md;
+}
