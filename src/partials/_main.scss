@@ -1,0 +1,30 @@
+// Section Features
+.features{
+
+    &-container{
+        @include display_flex;
+        justify-content: space-between;
+    }
+
+    .feature{
+        text-align: center;
+        color: $font_secondary_color;
+        width: 23%;
+        margin-top: 40px;
+
+        img{
+            height: 50px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-size: $font_size_md;
+            padding: 8px 0;
+        }
+
+        p{
+            font-size: $font_size_sm;
+            line-height: 25px;
+        }
+    }
+}

@@ -4,10 +4,16 @@
     display: flex;
 }
 
-@mixin btn-standard {
+@mixin btn_standard {
     padding: 7px 25px;
     border-radius: 2px;
     text-transform: uppercase;
     font-family: $font_style_nav_btn;
     font-size: $font_size_md;
+}
+
+@mixin center_vertically {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }

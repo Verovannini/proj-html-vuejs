@@ -27,6 +27,10 @@ header{
             a{
                 color: $brand_secondary_color;
                 text-transform: uppercase;
+
+                &.active{
+                    color: $brand_primary_color;
+                }
             }
         }
     }
@@ -34,10 +38,7 @@ header{
     .teaser{
         color: $brand_secondary_color;
         width: 40%;
-        position: absolute;
-        left: auto;
-        top: 50%;
-        transform: translateY(-50%);
+        @include center_vertically;
 
         h1{
            font-size: $font_size_title; 

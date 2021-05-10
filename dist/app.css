@@ -18,6 +18,22 @@ body {
   margin: 0 auto;
 }
 
+.title-container {
+  width: 40%;
+  margin: 0 auto;
+  color: #46525f;
+  text-align: center;
+}
+.title-container h2 {
+  font-size: 25px;
+  font-weight: 100;
+  padding-bottom: 15px;
+}
+.title-container p {
+  font-size: 13px;
+  line-height: 28px;
+}
+
 .menu {
   list-style-type: none;
 }
@@ -25,19 +41,20 @@ body {
   text-decoration: none;
   font-size: 10px;
 }
-.menu a.active {
-  color: #39afbb;
-}
 
 .blue-btn {
   padding: 7px 25px;
   border-radius: 2px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   background-color: #39afbb;
   color: #fff;
   border: 0;
+}
+
+.section-padd {
+  padding: 60px 0 70px 0;
 }
 
 header {
@@ -68,11 +85,13 @@ header nav .menu a {
   color: #fff;
   text-transform: uppercase;
 }
+header nav .menu a.active {
+  color: #39afbb;
+}
 header .teaser {
   color: #fff;
   width: 40%;
   position: absolute;
-  left: auto;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -89,4 +108,27 @@ header .teaser p {
 }
 header .teaser .blue-btn {
   padding: 10px 30px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+}
+.features .feature {
+  text-align: center;
+  color: #bcbcbd;
+  width: 23%;
+  margin-top: 40px;
+}
+.features .feature img {
+  height: 50px;
+}
+.features .feature h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 8px 0;
+}
+.features .feature p {
+  font-size: 10px;
+  line-height: 25px;
 }
