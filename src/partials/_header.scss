@@ -37,7 +37,9 @@ header{
     .teaser{
         color: $brand_secondary_color;
         width: 40%;
-        @include center_vertically;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
 
         h1{
            font-size: $font_size_title; 

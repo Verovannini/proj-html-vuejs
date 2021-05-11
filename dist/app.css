@@ -225,3 +225,23 @@ header .teaser .blue-btn {
 .doctors .doctor-card .social-buttons a.instagram {
   background-color: #3d739c;
 }
+
+.tour {
+  background-image: url(../img/paralax-bg-tour-facilities.jpg);
+  height: 450px;
+  background-size: cover;
+  background-position-y: center;
+  position: relative;
+}
+.tour .title-container {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tour .title-container .play {
+  width: 40px;
+  cursor: pointer;
+  margin-top: 25px;
+}

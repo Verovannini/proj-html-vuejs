@@ -80,3 +80,24 @@
     }
 }
 // End Doctors Section
+
+// Start Tour Section
+.tour{
+    background-image: url(../img/paralax-bg-tour-facilities.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position-y: center;
+    position: relative;
+
+    .title-container{
+        color: $brand_secondary_color;
+        @include center;
+
+        .play{
+            width: 40px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+    }
+}
+// End Tour Section

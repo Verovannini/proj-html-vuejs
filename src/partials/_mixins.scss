@@ -18,10 +18,12 @@
     cursor: pointer;
 }
 
-@mixin center_vertically {
+// Per centrare verticalmente un elemento, ricordarsi di dare position relative al genitore
+@mixin center {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate( -50%, -50% );
 }
 
 // Mixins Section Title Container
