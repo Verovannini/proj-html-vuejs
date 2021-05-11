@@ -31,7 +31,7 @@ body {
   border-radius: 2px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
   background-color: #39afbb;
   color: #fff;
@@ -67,12 +67,38 @@ body {
   transform: translateX(-50%);
 }
 .title-container p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 28px;
 }
 
 img.icon {
   height: 50px;
+}
+
+.elements-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.elements-container .element {
+  text-align: center;
+  color: #bcbcbd;
+  margin-top: 50px;
+}
+.elements-container .element.col-4 {
+  width: 23%;
+}
+.elements-container .element.col-3 {
+  width: 32%;
+}
+.elements-container .element h3 {
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 8px 0;
+}
+.elements-container .element p {
+  font-size: 10px;
+  line-height: 25px;
 }
 
 header {
@@ -140,27 +166,8 @@ header .teaser .blue-btn {
   padding-bottom: 20px;
 }
 .features .title p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 28px;
-}
-.features-container {
-  display: flex;
-  justify-content: space-between;
-}
-.features .feature {
-  text-align: center;
-  color: #bcbcbd;
-  width: 23%;
-  margin-top: 40px;
-}
-.features .feature h3 {
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 8px 0;
-}
-.features .feature p {
-  font-size: 10px;
-  line-height: 25px;
 }
 
 .doctors {
@@ -183,7 +190,7 @@ header .teaser .blue-btn {
   padding: 30px 25px;
 }
 .doctors .doctor-card .info {
-  font-size: 12px;
+  font-size: 13px;
   padding-bottom: 20px;
 }
 .doctors .doctor-card .name {

@@ -43,6 +43,7 @@ body{
 }
 
 // Common Main
+// Title of every section (first section excluded)
 .title-container{
     @include title_container;
 
@@ -71,4 +72,34 @@ body{
 
 img.icon{
     height: 50px;
+}
+
+// Container and elements in features and services section
+.elements-container{
+    @include flex_between;
+    flex-wrap: wrap;
+
+    .element{
+        text-align: center;
+        color: $font_secondary_color;
+        margin-top: 50px;
+
+        &.col-4{
+            width: 23%;
+        }
+
+        &.col-3{
+            width: 32%;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-size: $font_size_md;
+            padding: 8px 0;
+        }
+
+        p{
+            @include small_paragraph;
+        }
+    }
 }
