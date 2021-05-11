@@ -101,3 +101,48 @@
     }
 }
 // End Tour Section
+
+// Start Infos Section
+.infos{
+    @include display_flex;
+    color: $brand_secondary_color;
+    text-align: center;
+
+    .info{
+        padding: 35px 15px;
+
+        &.bg-1{
+            background-color: $brand_primary_color;
+        }
+
+        &.bg-2{
+            background-color: $caroulsel_color_1;
+        }
+
+        &.bg-3{
+            background-color: $carousel_color_2;
+        }
+
+        h3{
+            font-size: $font_size_md;
+        }
+        img{
+            width: 50px;
+            margin-top: 10px;
+        }
+        p{
+            @include small_paragraph;
+        }
+
+        button{
+            @include btn_standard;
+            color: $brand_secondary_color;
+            border: 2px solid $brand_secondary_color;
+            background-color: transparent;
+            margin-top: 10px;
+            font-size: $font_size_sm;
+            padding: 7px 20px;
+        }
+    }
+}
+// End Infos Section

@@ -27,15 +27,15 @@ body {
 }
 
 .blue-btn {
-  padding: 7px 25px;
   border-radius: 2px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
   cursor: pointer;
   background-color: #39afbb;
   color: #fff;
   border: 0;
+  font-size: 13px;
+  padding: 7px 25px;
 }
 
 .section-padd {
@@ -244,4 +244,45 @@ header .teaser .blue-btn {
   width: 40px;
   cursor: pointer;
   margin-top: 25px;
+}
+
+.infos {
+  display: flex;
+  color: #fff;
+  text-align: center;
+}
+.infos .info {
+  padding: 35px 15px;
+}
+.infos .info.bg-1 {
+  background-color: #39afbb;
+}
+.infos .info.bg-2 {
+  background-color: #3298c4;
+}
+.infos .info.bg-3 {
+  background-color: #2e7fc8;
+}
+.infos .info h3 {
+  font-size: 13px;
+}
+.infos .info img {
+  width: 50px;
+  margin-top: 10px;
+}
+.infos .info p {
+  font-size: 10px;
+  line-height: 25px;
+}
+.infos .info button {
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
+  margin-top: 10px;
+  font-size: 10px;
+  padding: 7px 20px;
 }
