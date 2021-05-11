@@ -31,7 +31,7 @@ body {
   border-radius: 2px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   background-color: #39afbb;
   color: #fff;
@@ -67,7 +67,7 @@ body {
   transform: translateX(-50%);
 }
 .title-container p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 28px;
 }
 
@@ -121,7 +121,7 @@ header .teaser h1 span {
   color: #39afbb;
 }
 header .teaser p {
-  font-size: 16px;
+  font-size: 15px;
   padding-bottom: 20px;
 }
 header .teaser .blue-btn {
@@ -140,7 +140,7 @@ header .teaser .blue-btn {
   padding-bottom: 20px;
 }
 .features .title p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 28px;
 }
 .features-container {
@@ -155,7 +155,7 @@ header .teaser .blue-btn {
 }
 .features .feature h3 {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   padding: 8px 0;
 }
 .features .feature p {
@@ -172,17 +172,49 @@ header .teaser .blue-btn {
 }
 .doctors .doctor {
   background-color: #fff;
-  width: 30%;
+  width: 31%;
   margin-top: 40px;
 }
 .doctors .doctor img {
   width: 100%;
   display: block;
 }
-.doctors .doctor-info {
-  padding: 25px 20px;
+.doctors .doctor-card {
+  padding: 30px 25px;
 }
-.doctors .doctor-info p {
+.doctors .doctor-card .info {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.doctors .doctor-card .name {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.doctors .doctor-card p {
   font-size: 10px;
   line-height: 25px;
+  color: #bcbcbd;
+}
+.doctors .doctor-card .social-buttons {
+  padding-top: 30px;
+}
+.doctors .doctor-card .social-buttons a {
+  color: #fff;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.doctors .doctor-card .social-buttons a.fb {
+  background-color: #395899;
+}
+.doctors .doctor-card .social-buttons a.twitter {
+  background-color: #53aeef;
+}
+.doctors .doctor-card .social-buttons a.instagram {
+  background-color: #3d739c;
 }
