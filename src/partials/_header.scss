@@ -6,10 +6,9 @@ header{
     position: relative;
 
     nav{
+        @include flex_between;
         font-family: $font_style_nav_btn;
         padding-top: 20px;
-        @include display_flex;
-        justify-content: space-between;
         align-items: center;
 
         .logo img{

@@ -18,22 +18,6 @@ body {
   margin: 0 auto;
 }
 
-.title-container {
-  width: 40%;
-  margin: 0 auto;
-  color: #46525f;
-  text-align: center;
-}
-.title-container h2 {
-  font-size: 25px;
-  font-weight: 100;
-  padding-bottom: 15px;
-}
-.title-container p {
-  font-size: 13px;
-  line-height: 28px;
-}
-
 .menu {
   list-style-type: none;
 }
@@ -58,6 +42,39 @@ body {
   padding: 60px 0 70px 0;
 }
 
+.title-container {
+  width: 40%;
+  margin: 0 auto;
+  color: #46525f;
+  text-align: center;
+}
+.title-container h2 {
+  font-size: 25px;
+  font-weight: 100;
+  padding-bottom: 20px;
+  margin-bottom: 17px;
+  position: relative;
+  text-transform: uppercase;
+}
+.title-container h2::after {
+  content: "";
+  width: 170px;
+  display: block;
+  border-bottom: 1px solid #bcbcbd;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title-container p {
+  font-size: 13px;
+  line-height: 28px;
+}
+
+img.icon {
+  height: 50px;
+}
+
 header {
   background-image: url(../img/header-image-homepage.jpg);
   height: 570px;
@@ -66,10 +83,10 @@ header {
   position: relative;
 }
 header nav {
-  font-family: "Montserrat", sans-serif;
-  padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 20px;
   align-items: center;
 }
 header nav .logo img {
@@ -111,6 +128,21 @@ header .teaser .blue-btn {
   padding: 10px 30px;
 }
 
+.features .title {
+  width: 40%;
+  margin: 0 auto;
+  color: #46525f;
+  text-align: center;
+}
+.features .title h2 {
+  font-size: 25px;
+  font-weight: 100;
+  padding-bottom: 20px;
+}
+.features .title p {
+  font-size: 13px;
+  line-height: 28px;
+}
 .features-container {
   display: flex;
   justify-content: space-between;
@@ -121,15 +153,36 @@ header .teaser .blue-btn {
   width: 23%;
   margin-top: 40px;
 }
-.features .feature img {
-  height: 50px;
-}
 .features .feature h3 {
   text-transform: uppercase;
   font-size: 13px;
   padding: 8px 0;
 }
 .features .feature p {
+  font-size: 10px;
+  line-height: 25px;
+}
+
+.doctors {
+  background-color: #f6f4f4;
+}
+.doctors .container {
+  display: flex;
+  justify-content: space-between;
+}
+.doctors .doctor {
+  background-color: #fff;
+  width: 30%;
+  margin-top: 40px;
+}
+.doctors .doctor img {
+  width: 100%;
+  display: block;
+}
+.doctors .doctor-info {
+  padding: 25px 20px;
+}
+.doctors .doctor-info p {
   font-size: 10px;
   line-height: 25px;
 }

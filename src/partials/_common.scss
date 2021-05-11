@@ -20,24 +20,6 @@ body{
     margin: 0 auto;
 }
 
-.title-container{
-    width: 40%;
-    margin: 0 auto;
-    color: $font_primary_color;
-    text-align: center;
-
-    h2{
-        font-size: $font_size_secondary_title;
-        font-weight: 100;
-        padding-bottom: 15px;
-    }
-
-    p{
-        font-size: $font_size_md;
-        line-height: 28px;
-    }
-}
-
 // Menus
 .menu{
     list-style-type: none;
@@ -58,4 +40,35 @@ body{
 
 .section-padd{
     padding: 60px 0 70px 0;
+}
+
+// Common Main
+.title-container{
+    @include title_container;
+
+    h2{
+        @include section_title;
+        margin-bottom: 17px;
+        position: relative;
+        text-transform: uppercase;
+
+        &::after{
+            content: '';
+            width: 170px;
+            display: block;
+            border-bottom: 1px solid $font_secondary_color;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    p{
+        @include section_subtitle;
+    }
+}
+
+img.icon{
+    height: 50px;
 }
