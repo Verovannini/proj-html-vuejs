@@ -286,3 +286,46 @@ header .teaser .blue-btn {
   font-size: 10px;
   padding: 7px 20px;
 }
+
+.appointment {
+  background-image: url(../img/make-an-appointment.jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.appointment .title-container {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.appointment .title-container h2 {
+  text-transform: initial;
+}
+.appointment .title-container .appointment-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.appointment .title-container .appointment-form input {
+  border: 1px solid #bcbcbd;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 8px;
+  width: 48%;
+  margin-bottom: 20px;
+}
+.appointment .title-container .appointment-form textarea {
+  border: 1px solid #bcbcbd;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.appointment .title-container .appointment-form .blue-btn {
+  width: 100%;
+}

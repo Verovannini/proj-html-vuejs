@@ -146,3 +146,44 @@
     }
 }
 // End Infos Section
+
+// Start Appointmant Section
+.appointment{
+    background-image: url(../img/make-an-appointment.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    .title-container{
+        color: $brand_secondary_color;
+        @include center;
+
+        h2{
+            text-transform: initial;
+        }
+
+        .appointment-form{
+            @include flex_between;
+            flex-wrap: wrap;
+            margin-top: 30px;
+
+            input{
+                @include input_style;
+                width: 48%;
+                margin-bottom: 20px;
+            }
+
+            textarea{
+                @include input_style;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .blue-btn{
+                width: 100%;
+            }
+        }
+    }
+}
+// End Appointmant Section

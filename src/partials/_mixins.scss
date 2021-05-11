@@ -47,3 +47,11 @@
     font-size: $font_size_sm;
     line-height: 25px;
 }
+
+// Inputs Style
+@mixin input_style {
+    border: 1px solid $font_secondary_color;
+    padding: 10px;
+    background-color: transparent;
+    font-size: $font_size_xs;
+}
