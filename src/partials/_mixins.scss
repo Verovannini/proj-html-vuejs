@@ -10,6 +10,7 @@
     text-transform: uppercase;
     font-family: $font_style_nav_btn;
     font-size: $font_size_md;
+    cursor: pointer;
 }
 
 @mixin center_vertically {

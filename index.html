@@ -36,11 +36,7 @@
 
                     <!-- Start Menu -->
                     <ul class="menu">
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Departments</a></li>
-                        <li><a href="#">Articles</a></li>
-                        <li><a class="blue-btn" href="#">Make appointment</a></li>
+                        <li v-for="(link, index) in linksHeader"><a :class="[{ active: activeLink === index }, { 'blue-btn': index === linksHeader.length - 1 }]" href="#">{{ link }}</a></li>
                     </ul>
                     <!-- End Menu -->
                 </nav>

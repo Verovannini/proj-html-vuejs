@@ -48,6 +48,7 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
+  cursor: pointer;
   background-color: #39afbb;
   color: #fff;
   border: 0;
