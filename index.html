@@ -314,15 +314,15 @@
                     <p>Sed ut perspiciatis unde ominis iste natus error sit voluptatem accusantium doloremque laudantius, totam rem apertiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
 
                     <!-- Start Form -->
-                    <div class="appointment-form">        
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
+                    <form class="appointment-form">        
+                        <input type="text" placeholder="Name*" required>
+                        <input type="email" placeholder="Email*" required>
                         <input type="number" placeholder="Phone Number">
                         <input type="date">
-                        <textarea cols="30" rows="6" placeholder="How can we help?"></textarea>
+                        <textarea cols="30" rows="6" placeholder="How can we help?*" required></textarea>
                         
-                        <button class="blue-btn">Make an appointment</button>
-                    </div>
+                        <input class="blue-btn" type="submit" value="Make an appointment">
+                    </form>
                     <!-- End Form -->
                 </div>
                 <!-- End Title -->

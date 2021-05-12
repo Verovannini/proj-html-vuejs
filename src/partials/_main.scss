@@ -168,20 +168,37 @@
             flex-wrap: wrap;
             margin-top: 30px;
 
-            input{
+            input:not(.blue-btn){
                 @include input_style;
                 width: 48%;
                 margin-bottom: 20px;
+                color: $brand_secondary_color;
+                font-family: $font_style_common;
             }
 
             textarea{
                 @include input_style;
                 width: 100%;
                 margin-bottom: 15px;
+                color: $brand_secondary_color;
+                font-family: $font_style_common;
             }
 
             .blue-btn{
                 width: 100%;
+            }
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $font_secondary_color;
+                opacity: 1; /* Firefox */
+            }
+              
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: $font_secondary_color;
+            }
+              
+            ::-ms-input-placeholder { /* Microsoft Edge */
+                color: $font_secondary_color;
             }
         }
     }
