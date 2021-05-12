@@ -359,3 +359,19 @@ header .teaser .blue-btn {
   /* Microsoft Edge */
   color: #bcbcbd;
 }
+
+.carousel {
+  background-image: url(../img/rgb-gradient-bar-for-logo-carrasel.jpg);
+  background-size: cover;
+  padding: 10px 0;
+}
+.carousel .container {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel .client-logo {
+  width: 25%;
+}
+.carousel .client-logo img {
+  width: 100%;
+}

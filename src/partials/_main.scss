@@ -204,3 +204,24 @@
     }
 }
 // End Appointmant Section
+
+// Start Carousel Section
+.carousel{
+    background-image: url(../img/rgb-gradient-bar-for-logo-carrasel.jpg);
+    background-size: cover;
+    padding: 10px 0;
+
+    .container{
+        @include flex_between;
+    }
+
+    .client-logo{
+        width: 25%;
+
+        img{
+            width: 100%;
+        }
+    }
+    
+}
+// End Carousel Section
