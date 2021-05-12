@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 }
 
+.logo img {
+  max-width: 180px;
+}
+
 .menu {
   list-style-type: none;
 }
@@ -34,7 +38,7 @@ body {
   background-color: #39afbb;
   color: #fff;
   border: 0;
-  font-size: 13px;
+  font-size: 12px;
   padding: 7px 25px;
 }
 
@@ -67,7 +71,7 @@ body {
   transform: translateX(-50%);
 }
 .title-container p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 28px;
 }
 
@@ -93,12 +97,36 @@ img.icon {
 }
 .elements-container .element h3 {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   padding: 8px 0;
 }
 .elements-container .element p {
   font-size: 10px;
   line-height: 25px;
+}
+
+.social-buttons a {
+  color: #fff;
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.social-buttons a.fb {
+  background-color: #395899;
+}
+.social-buttons a.twitter {
+  background-color: #53aeef;
+}
+.social-buttons a.instagram {
+  background-color: #3d739c;
+}
+.social-buttons a.youtube {
+  background-color: #ce341b;
 }
 
 header {
@@ -114,9 +142,6 @@ header nav {
   font-family: "Montserrat", sans-serif;
   padding-top: 20px;
   align-items: center;
-}
-header nav .logo img {
-  max-width: 180px;
 }
 header nav .menu {
   display: flex;
@@ -166,7 +191,7 @@ header .teaser .blue-btn {
   padding-bottom: 20px;
 }
 .features .title p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 28px;
 }
 
@@ -190,7 +215,7 @@ header .teaser .blue-btn {
   padding: 30px 25px;
 }
 .doctors .doctor-card .info {
-  font-size: 13px;
+  font-size: 12px;
   padding-bottom: 20px;
 }
 .doctors .doctor-card .name {
@@ -201,29 +226,7 @@ header .teaser .blue-btn {
   font-size: 10px;
   line-height: 25px;
   color: #bcbcbd;
-}
-.doctors .doctor-card .social-buttons {
-  padding-top: 30px;
-}
-.doctors .doctor-card .social-buttons a {
-  color: #fff;
-  font-size: 10px;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-  border-radius: 3px;
-  margin-right: 5px;
-}
-.doctors .doctor-card .social-buttons a.fb {
-  background-color: #395899;
-}
-.doctors .doctor-card .social-buttons a.twitter {
-  background-color: #53aeef;
-}
-.doctors .doctor-card .social-buttons a.instagram {
-  background-color: #3d739c;
+  padding-bottom: 30px;
 }
 
 .tour {
@@ -264,7 +267,7 @@ header .teaser .blue-btn {
   background-color: #2e7fc8;
 }
 .infos .info h3 {
-  font-size: 13px;
+  font-size: 12px;
 }
 .infos .info img {
   width: 50px;
@@ -374,4 +377,92 @@ header .teaser .blue-btn {
 }
 .carousel .client-logo img {
   width: 100%;
+}
+
+footer {
+  color: #bcbcbd;
+}
+
+.footer-top {
+  padding: 40px;
+  display: flex;
+}
+.footer-top .footer-info,
+.footer-top .contacts,
+.footer-top .departments {
+  width: calc(100% / 3);
+}
+.footer-top h4 {
+  font-size: 12px;
+  color: #46525f;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.footer-top h4::after {
+  content: "";
+  width: 30px;
+  display: block;
+  border-bottom: 1px solid #39afbb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer-top .footer-info {
+  padding-right: 20px;
+}
+.footer-top .footer-info .logo {
+  border-bottom: 1px solid #f6f4f4;
+}
+.footer-top .footer-info .logo p {
+  font-size: 10px;
+  line-height: 25px;
+  padding: 10px 0;
+}
+.footer-top .footer-info h5 {
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 0 20px 0;
+}
+.footer-top .contacts {
+  font-size: 10px;
+}
+.footer-top .contacts i {
+  color: #39afbb;
+  margin-right: 7px;
+}
+.footer-top .contacts .street {
+  padding-bottom: 5px;
+}
+.footer-top .contacts .street i {
+  margin-right: 10px;
+}
+.footer-top .departments a {
+  color: #bcbcbd;
+}
+.footer-top .departments .circle {
+  color: #fff;
+  background-color: #39afbb;
+  font-size: 8px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.footer-top .departments button {
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  background-color: transparent;
+  color: #bcbcbd;
+  border: 2px solid #bcbcbd;
+  padding: 7px 20px;
+  margin-top: 30px;
 }

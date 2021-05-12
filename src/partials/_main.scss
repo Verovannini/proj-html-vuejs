@@ -49,32 +49,7 @@
             p{
                 @include small_paragraph;
                 color: $font_secondary_color;
-            }
-
-            .social-buttons{
-                padding-top: 30px;
-
-                a{
-                    color: $brand_secondary_color;
-                    font-size: $font_size_sm;
-                    width: 20px;
-                    height: 20px;
-                    display: inline-block;
-                    text-align: center;
-                    line-height: 20px;
-                    border-radius: 3px;
-                    margin-right: 5px;
-
-                    &.fb{
-                        background-color: #395899;
-                    }
-                    &.twitter{
-                        background-color: #53aeef;
-                    }
-                    &.instagram{
-                        background-color: #3d739c;
-                    }
-                }
+                padding-bottom: 30px;
             }
         }
     }

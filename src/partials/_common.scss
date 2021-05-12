@@ -20,6 +20,11 @@ body{
     margin: 0 auto;
 }
 
+// Width logo header and footer
+.logo img{
+    max-width: 180px;
+}
+
 // Menus
 .menu{
     list-style-type: none;
@@ -102,6 +107,35 @@ img.icon{
 
         p{
             @include small_paragraph;
+        }
+    }
+}
+
+// Social media button in doctors section and in footer
+.social-buttons{
+
+    a{
+        color: $brand_secondary_color;
+        font-size: $font_size_sm;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 3px;
+        margin-right: 5px;
+
+        &.fb{
+            background-color: #395899;
+        }
+        &.twitter{
+            background-color: #53aeef;
+        }
+        &.instagram{
+            background-color: #3d739c;
+        }
+        &.youtube{
+            background-color: #ce341b;
         }
     }
 }
