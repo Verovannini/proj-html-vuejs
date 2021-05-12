@@ -47,6 +47,7 @@ footer{
         h5{
             text-transform: uppercase;
             font-size: $font_size_md;
+            color: $font_primary_color;
             padding: 5px 0 20px 0;
         }
     }
@@ -90,6 +91,7 @@ footer{
 
         button{
             @include btn_standard;
+            font-size: $font_size_md;
             background-color: transparent;
             color: $font_secondary_color;
             border: 2px solid $font_secondary_color;
@@ -97,4 +99,23 @@ footer{
             margin-top: 30px;
         }
     }
+}
+
+.footer-bottom{
+    background-color: $bg_color;
+    color: $font_secondary_color;
+    font-size: $font_size_xs;
+    padding: 20px 40px;
+}
+
+.arrow-up{
+    background-color: $font_primary_color;
+    color: $brand_secondary_color;
+    font-size: $font_size_sm;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: 1;
+    border-radius: 2px 2px 0 0;
 }

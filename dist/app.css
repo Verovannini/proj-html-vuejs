@@ -49,7 +49,7 @@ body {
 .title-container {
   width: 40%;
   margin: 0 auto;
-  color: #46525f;
+  color: #41474f;
   text-align: center;
 }
 .title-container h2 {
@@ -64,7 +64,7 @@ body {
   content: "";
   width: 170px;
   display: block;
-  border-bottom: 1px solid #bcbcbd;
+  border-bottom: 1px solid #a2a2a4;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -86,7 +86,7 @@ img.icon {
 }
 .elements-container .element {
   text-align: center;
-  color: #bcbcbd;
+  color: #a2a2a4;
   margin-top: 50px;
 }
 .elements-container .element.col-4 {
@@ -182,7 +182,7 @@ header .teaser .blue-btn {
 .features .title {
   width: 40%;
   margin: 0 auto;
-  color: #46525f;
+  color: #41474f;
   text-align: center;
 }
 .features .title h2 {
@@ -225,7 +225,7 @@ header .teaser .blue-btn {
 .doctors .doctor-card p {
   font-size: 10px;
   line-height: 25px;
-  color: #bcbcbd;
+  color: #a2a2a4;
   padding-bottom: 30px;
 }
 
@@ -314,7 +314,7 @@ header .teaser .blue-btn {
   margin-top: 30px;
 }
 .appointment .title-container .appointment-form input:not(.blue-btn) {
-  border: 1px solid #bcbcbd;
+  border: 1px solid #a2a2a4;
   padding: 10px;
   background-color: transparent;
   font-size: 8px;
@@ -324,7 +324,7 @@ header .teaser .blue-btn {
   font-family: "Noto Sans JP", sans-serif;
 }
 .appointment .title-container .appointment-form textarea {
-  border: 1px solid #bcbcbd;
+  border: 1px solid #a2a2a4;
   padding: 10px;
   background-color: transparent;
   font-size: 8px;
@@ -338,29 +338,29 @@ header .teaser .blue-btn {
 }
 .appointment .title-container .appointment-form ::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #bcbcbd;
+  color: #a2a2a4;
   opacity: 1;
   /* Firefox */
 }
 .appointment .title-container .appointment-form :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #bcbcbd;
+  color: #a2a2a4;
   opacity: 1;
   /* Firefox */
 }
 .appointment .title-container .appointment-form ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #bcbcbd;
+  color: #a2a2a4;
   opacity: 1;
   /* Firefox */
 }
 .appointment .title-container .appointment-form :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #bcbcbd;
+  color: #a2a2a4;
 }
 .appointment .title-container .appointment-form ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #bcbcbd;
+  color: #a2a2a4;
 }
 
 .carousel {
@@ -380,7 +380,7 @@ header .teaser .blue-btn {
 }
 
 footer {
-  color: #bcbcbd;
+  color: #a2a2a4;
 }
 
 .footer-top {
@@ -394,7 +394,7 @@ footer {
 }
 .footer-top h4 {
   font-size: 12px;
-  color: #46525f;
+  color: #41474f;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   padding-bottom: 15px;
@@ -424,6 +424,7 @@ footer {
 .footer-top .footer-info h5 {
   text-transform: uppercase;
   font-size: 12px;
+  color: #41474f;
   padding: 5px 0 20px 0;
 }
 .footer-top .contacts {
@@ -440,7 +441,7 @@ footer {
   margin-right: 10px;
 }
 .footer-top .departments a {
-  color: #bcbcbd;
+  color: #a2a2a4;
 }
 .footer-top .departments .circle {
   color: #fff;
@@ -460,9 +461,29 @@ footer {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  font-size: 12px;
   background-color: transparent;
-  color: #bcbcbd;
-  border: 2px solid #bcbcbd;
+  color: #a2a2a4;
+  border: 2px solid #a2a2a4;
   padding: 7px 20px;
   margin-top: 30px;
+}
+
+.footer-bottom {
+  background-color: #f6f4f4;
+  color: #a2a2a4;
+  font-size: 8px;
+  padding: 20px 40px;
+}
+
+.arrow-up {
+  background-color: #41474f;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  z-index: 1;
+  border-radius: 2px 2px 0 0;
 }

@@ -384,10 +384,10 @@
                 <ul class="menu departments">
                     <li><h4>Medical departments</h4></li>
 
-                    <li>
+                    <li v-for="linkFooter in linksFooter ">
                         <a href="#">
                             <span class="circle"><i class="fas fa-chevron-right"></i></span>   
-                            Cardiology
+                            {{ linkFooter }}
                         </a>
                     </li>
 
@@ -398,8 +398,14 @@
             <!-- End Footer Top -->
 
             <!-- Start Footer Bottom -->
-            <div class="footer-bottom"></div>
+            <div class="footer-bottom">
+                <p><i class="far fa-copyright"></i> Copyright 2012-2020 | Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress</p>
+            </div>
             <!-- End Footer Bottom -->
+
+            <!-- Start Arrow Up -->
+            <div class="arrow-up"><i class="fas fa-chevron-up"></i></div>
+            <!-- End Arrow Up -->
         </footer>
         <!-- END FOOTER -->
     </div>
