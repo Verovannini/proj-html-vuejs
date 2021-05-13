@@ -73,6 +73,10 @@ footer{
 
         a{
             color: $font_secondary_color;
+
+            &:hover .circle{
+                transform: scale(1.1, 1.1);
+            }
         }
 
         .circle{
@@ -97,6 +101,10 @@ footer{
             border: 2px solid $font_secondary_color;
             padding: 7px 20px;
             margin-top: 30px;
+
+            &:hover{
+                background-color: $bg_color;
+            }
         }
     }
 }
@@ -118,4 +126,9 @@ footer{
     right: 5%;
     z-index: 1;
     border-radius: 2px 2px 0 0;
+    border: 0;
+
+    &:hover{
+        transform: scale(1.2, 1.2);
+    }
 }

@@ -32,6 +32,10 @@ body{
     a{
         text-decoration: none;
         font-size: $font_size_sm;
+
+        &:hover:not(.blue-btn){
+            text-decoration: underline;
+        }
     }
 }
 
@@ -43,6 +47,10 @@ body{
     border: 0;
     font-size: $font_size_md;
     padding: 7px 25px;
+
+    &:hover{
+        background-color: lighten($brand_primary_color, 10%);
+    }
 }
 
 .section-padd{
@@ -136,6 +144,10 @@ img.icon{
         }
         &.youtube{
             background-color: #ce341b;
+        }
+
+        &:hover{
+            transform: scale(1.2, 1.2);
         }
     }
 }

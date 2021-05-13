@@ -72,6 +72,10 @@
             width: 40px;
             cursor: pointer;
             margin-top: 25px;
+
+            &:hover{
+                transform: scale(1.1, 1.1)
+            }
         }
     }
 }
@@ -117,6 +121,10 @@
             margin-top: 10px;
             font-size: $font_size_sm;
             padding: 7px 20px;
+
+            &:hover{
+                transform: scale(1.1, 1.1);
+            }
         }
     }
 }
