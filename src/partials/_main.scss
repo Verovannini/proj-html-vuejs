@@ -130,7 +130,7 @@
 }
 // End Infos Section
 
-// Start Appointmant Section
+// Start Appointmant Section and form
 .appointment{
     background-image: url(../img/make-an-appointment.jpg);
     height: 600px;
@@ -155,7 +155,7 @@
                 @include input_style;
                 width: 48%;
                 margin-bottom: 20px;
-                color: $brand_secondary_color;
+                color: $bg_color;
                 font-family: $font_style_common;
             }
 
@@ -163,7 +163,7 @@
                 @include input_style;
                 width: 100%;
                 margin-bottom: 15px;
-                color: $brand_secondary_color;
+                color: $bg_color;
                 font-family: $font_style_common;
             }
 
@@ -172,16 +172,16 @@
             }
 
             ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-                color: $font_secondary_color;
+                color: $bg_color;
                 opacity: 1; /* Firefox */
             }
               
             :-ms-input-placeholder { /* Internet Explorer 10-11 */
-                color: $font_secondary_color;
+                color: $bg_color;
             }
               
             ::-ms-input-placeholder { /* Microsoft Edge */
-                color: $font_secondary_color;
+                color: $bg_color;
             }
         }
     }
@@ -194,7 +194,7 @@
     background-size: cover;
     padding: 10px 0;
 
-    .container{
+    ul{
         @include flex_between;
     }
 

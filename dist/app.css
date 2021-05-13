@@ -335,7 +335,7 @@ header .teaser .blue-btn {
   font-size: 8px;
   width: 48%;
   margin-bottom: 20px;
-  color: #fff;
+  color: #f6f4f4;
   font-family: "Noto Sans JP", sans-serif;
 }
 .appointment .title-container .appointment-form textarea {
@@ -345,7 +345,7 @@ header .teaser .blue-btn {
   font-size: 8px;
   width: 100%;
   margin-bottom: 15px;
-  color: #fff;
+  color: #f6f4f4;
   font-family: "Noto Sans JP", sans-serif;
 }
 .appointment .title-container .appointment-form .blue-btn {
@@ -353,29 +353,29 @@ header .teaser .blue-btn {
 }
 .appointment .title-container .appointment-form ::-moz-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #a2a2a4;
+  color: #f6f4f4;
   opacity: 1;
   /* Firefox */
 }
 .appointment .title-container .appointment-form :-ms-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #a2a2a4;
+  color: #f6f4f4;
   opacity: 1;
   /* Firefox */
 }
 .appointment .title-container .appointment-form ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #a2a2a4;
+  color: #f6f4f4;
   opacity: 1;
   /* Firefox */
 }
 .appointment .title-container .appointment-form :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #a2a2a4;
+  color: #f6f4f4;
 }
 .appointment .title-container .appointment-form ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #a2a2a4;
+  color: #f6f4f4;
 }
 
 .carousel {
@@ -383,7 +383,7 @@ header .teaser .blue-btn {
   background-size: cover;
   padding: 10px 0;
 }
-.carousel .container {
+.carousel ul {
   display: flex;
   justify-content: space-between;
 }
