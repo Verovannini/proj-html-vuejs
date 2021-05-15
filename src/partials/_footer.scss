@@ -3,8 +3,8 @@ footer{
 }
 
 .footer-top{
-    padding: 40px;
     @include display_flex;
+    padding: 40px 0;
 
     .footer-info,
     .contacts,
@@ -93,7 +93,7 @@ footer{
             vertical-align: middle;
         }
 
-        button{
+        .btn-footer{
             @include btn_standard;
             font-size: $font_size_md;
             background-color: transparent;
@@ -113,7 +113,7 @@ footer{
     background-color: $bg_color;
     color: $font_secondary_color;
     font-size: $font_size_xs;
-    padding: 20px 40px;
+    padding: 20px 0;
 }
 
 .arrow-up{

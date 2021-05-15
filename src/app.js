@@ -4,21 +4,51 @@ var app = new Vue(
         data: {
             // Links List Header Menu
             linksHeader: [
-                'Home',
-                'About',
-                'Departments',
-                'Articles',
-                'Make Appointment'
+                {
+                    name: 'Home',
+                    link: '#'
+                },
+                {
+                    name: 'About',
+                    link: '#'
+                },
+                {
+                    name: 'Departments',
+                    link: '#'
+                },
+                {
+                    name: 'Articles',
+                    link: '#'
+                },
+                {
+                    name: 'Make Appointment',
+                    link: '#'
+                }
             ],
             activeLink: 0,
 
             // Links List Footer Menu
             linksFooter: [
-                'Cardiology',
-                'Pediatrics',
-                'Diabetes Care',
-                'Pre-natel Care',
-                'Ultrasound Echocardiogram'
+                {
+                    name: 'Cardiology',
+                    link: '#'
+                },
+                {
+                    name: 'Pediatrics',
+                    link: '#'
+                },
+                {
+                    name: 'Diabetes Care',
+                    link: '#'
+                },
+                {
+                    name: 'Pre-natel Care',
+                    link: '#'
+                },
+                {
+                    name: 'Ultrasound Echocardiogram',
+                    link: '#'
+                }
             ],
 
             // Logo images paths

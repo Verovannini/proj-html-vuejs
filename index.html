@@ -36,7 +36,7 @@
 
                     <!-- Start Menu -->
                     <ul class="menu">
-                        <li v-for="(link, index) in linksHeader"><a :class="[{ active: activeLink === index }, { 'blue-btn': index === linksHeader.length - 1 }]" href="#">{{ link }}</a></li>
+                        <li v-for="(link, index) in linksHeader"><a :class="[{ active: activeLink === index }, { 'blue-btn': index === linksHeader.length - 1 }]" :href="link.link">{{ link.name }}</a></li>
                     </ul>
                     <!-- End Menu -->
                 </nav>
@@ -48,7 +48,7 @@
                 <div class="teaser">
                     <h1>Caring <span>For Life</span></h1>
                     <p>Kind words can be short and easy to speak, but their echoes are truly endless. Avada Health focuses on you as if it was our own family.</p>
-                    <button class="blue-btn">Learn More</button>
+                    <a class="blue-btn" href="#">Learn More</a>
                 </div>
             </div>
             <!-- End Teaser -->
@@ -268,7 +268,7 @@
                     <h2>Tour Our Facilities</h2>
                     <p>Sed ut perspiciatis unde ominis iste natus error sit voluptatem accusantium doloremque laudantius, totam rem apertiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae</p>
 
-                    <img class="play" src="img/play-icon.png" alt="Icon play">
+                    <a href="#"><img class="play" src="img/play-icon.png" alt="Icon play"></a>
                 </div>
                 <!-- End Title -->
             </section>
@@ -281,7 +281,7 @@
                     <h3>Emergency Care</h3>
                     <img src="img/wave-divider.png" alt="Divider">
                     <p>Sed ut perspiciatis unde ominis iste natus error sit voluptatem accusantium doloremque laudantius, totam rem apertiam, eaque</p>
-                    <button>Learn More</button>
+                    <a class="btn" href="#">Learn More</a>
                 </div>
                 <!-- End Single Info -->
 
@@ -290,7 +290,7 @@
                     <h3>Expert Diagnostics</h3>
                     <img src="img/wave-divider.png" alt="Divider">
                     <p>Sed ut perspiciatis unde ominis iste natus error sit voluptatem accusantium doloremque laudantius, totam rem apertiam, eaque</p>
-                    <button>Learn More</button>
+                    <a class="btn" href="#">Learn More</a>
                 </div>
                 <!-- End Single Info -->
 
@@ -299,7 +299,7 @@
                     <h3>Superb Rehabilitation</h3>
                     <img src="img/wave-divider.png" alt="Divider">
                     <p>Sed ut perspiciatis unde ominis iste natus error sit voluptatem accusantium doloremque laudantius, totam rem apertiam, eaque</p>
-                    <button>Learn More</button>
+                    <a class="btn" href="#">Learn More</a>
                 </div>
                 <!-- End Single Info -->
             
@@ -345,62 +345,67 @@
 
         <!-- START FOOTER -->
         <footer>
-            <!-- Start Footer Top -->
-            <div class="footer-top">
-                <!-- Start Company Info -->
-                <div class="footer-info">
-                    <div class="logo">
-                        <img src="img/medical_logo_1x_dark.png" alt="Logo Avada Health">
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
-                    </div>
+            <div class="container-lg">
+                <!-- Start Footer Top -->
+                <div class="footer-top">
+                    <!-- Start Company Info -->
+                    <div class="footer-info">
+                        <div class="logo">
+                            <img src="img/medical_logo_1x_dark.png" alt="Logo Avada Health">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.</p>
+                        </div>
 
-                    <div class="social-buttons">
-                        <h5>learn more about us</h5>
+                        <div class="social-buttons">
+                            <h5>learn more about us</h5>
 
-                        <span><a class="fb" href="#"><i class="fab fa-facebook-f"></i></a></span>
-                        <span><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></span>
-                        <span><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></span>
-                        <span><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></span>
+                            <span><a class="fb" href="#"><i class="fab fa-facebook-f"></i></a></span>
+                            <span><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></span>
+                            <span><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></span>
+                            <span><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></span>
+                        </div>
                     </div>
+                    <!-- End Company Info -->
+
+                    <!-- Start Contact Information -->
+                    <div class="contacts">
+                        <h4>Contact Information</h4>
+
+                        <div class="street">
+                            <i class="fas fa-map-marker-alt"></i>
+                            121 King Street, London United Kingdom
+                        </div>
+
+                        <div>
+                            <i class="fas fa-phone"></i>
+                            1.800.458.556
+                        </div>
+                    </div>
+                    <!-- End Contact Information -->
+
+                    <!-- Start Footer Menu -->
+                    <ul class="menu departments">
+                        <li><h4>Medical departments</h4></li>
+
+                        <li v-for="linkFooter in linksFooter ">
+                            <a :href="linkFooter.link">
+                                <span class="circle"><i class="fas fa-chevron-right"></i></span>   
+                                {{ linkFooter.name }}
+                            </a>
+                        </li>
+
+                        <li><a class="btn-footer" href="#">View our departments</a></li>
+                    </ul>
+                    <!-- End Footer Menu -->
                 </div>
-                <!-- End Company Info -->
-
-                <!-- Start Contact Information -->
-                <div class="contacts">
-                    <h4>Contact Information</h4>
-
-                    <div class="street">
-                        <i class="fas fa-map-marker-alt"></i>
-                        121 King Street, London United Kingdom
-                    </div>
-
-                    <div>
-                        <i class="fas fa-phone"></i>
-                        1.800.458.556
-                    </div>
-                </div>
-                <!-- End Contact Information -->
-
-                <!-- Start Footer Menu -->
-                <ul class="menu departments">
-                    <li><h4>Medical departments</h4></li>
-
-                    <li v-for="linkFooter in linksFooter ">
-                        <a href="#">
-                            <span class="circle"><i class="fas fa-chevron-right"></i></span>   
-                            {{ linkFooter }}
-                        </a>
-                    </li>
-
-                    <button>View our departments</button>
-                </ul>
-                <!-- End Footer Menu -->
+                <!-- End Footer Top -->
             </div>
-            <!-- End Footer Top -->
+            
 
             <!-- Start Footer Bottom -->
             <div class="footer-bottom">
-                <p><i class="far fa-copyright"></i> Copyright 2012-2020 | Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress</p>
+                <div class="container-lg">
+                    <p><i class="far fa-copyright"></i> Copyright 2012-2020 | Avada Theme by Theme Fusion | All Rights Reserved | Powered by WordPress</p>
+                </div>
             </div>
             <!-- End Footer Bottom -->
 

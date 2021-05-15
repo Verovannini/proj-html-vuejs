@@ -14,6 +14,7 @@
     text-transform: uppercase;
     font-family: $font_style_nav_btn;
     cursor: pointer;
+    display: inline-block;
 }
 
 // Per centrare verticalmente un elemento, ricordarsi di dare position relative al genitore

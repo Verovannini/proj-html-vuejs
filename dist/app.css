@@ -26,11 +26,14 @@ body {
   list-style-type: none;
 }
 .menu a {
-  text-decoration: none;
   font-size: 10px;
 }
 .menu a:hover:not(.blue-btn) {
   text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
 }
 
 .blue-btn {
@@ -38,6 +41,7 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  display: inline-block;
   background-color: #39afbb;
   color: #fff;
   border: 0;
@@ -289,11 +293,12 @@ header .teaser .blue-btn {
   font-size: 10px;
   line-height: 25px;
 }
-.infos .info button {
+.infos .info .btn {
   border-radius: 2px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  display: inline-block;
   color: #fff;
   border: 2px solid #fff;
   background-color: transparent;
@@ -301,7 +306,7 @@ header .teaser .blue-btn {
   font-size: 10px;
   padding: 7px 20px;
 }
-.infos .info button:hover {
+.infos .info .btn:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -399,8 +404,8 @@ footer {
 }
 
 .footer-top {
-  padding: 40px;
   display: flex;
+  padding: 40px 0;
 }
 .footer-top .footer-info,
 .footer-top .contacts,
@@ -474,11 +479,12 @@ footer {
   margin-right: 5px;
   vertical-align: middle;
 }
-.footer-top .departments button {
+.footer-top .departments .btn-footer {
   border-radius: 2px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  display: inline-block;
   font-size: 12px;
   background-color: transparent;
   color: #a2a2a4;
@@ -486,7 +492,7 @@ footer {
   padding: 7px 20px;
   margin-top: 30px;
 }
-.footer-top .departments button:hover {
+.footer-top .departments .btn-footer:hover {
   background-color: #f6f4f4;
 }
 
@@ -494,7 +500,7 @@ footer {
   background-color: #f6f4f4;
   color: #a2a2a4;
   font-size: 8px;
-  padding: 20px 40px;
+  padding: 20px 0;
 }
 
 .arrow-up {

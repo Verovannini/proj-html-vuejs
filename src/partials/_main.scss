@@ -95,7 +95,7 @@
         }
 
         &.bg-2{
-            background-color: $caroulsel_color_1;
+            background-color: $carousel_color_1;
         }
 
         &.bg-3{
@@ -113,7 +113,7 @@
             @include small_paragraph;
         }
 
-        button{
+        .btn{
             @include btn_standard;
             color: $brand_secondary_color;
             border: 2px solid $brand_secondary_color;
